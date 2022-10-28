@@ -19,7 +19,38 @@ Esta sección es el inicio de nuestro MERN, (Mongo Express React Node), luego cr
 yarn create vite
 mv calendar/ 10-calendar
 yarn
+Instalaciones iniciales:
 
+Bootstrap:
+	https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+React router dom@6
+	https://reactrouter.com/en/v6.3.0/getting-started/installation
+
+Borrar directorios:
+	App.css
+	App.js
 
 2 - Implementacion de rutas utilizando el react router-dome.
 		Se implementan dos rutas con una validación de autenticacion para mostrar el login si no esta autenticado o el calendario en caso de que lo este.
+
+3 - LoginScreen y Navbar
+		Login con estilos y componentes:
+		https://gist.github.com/Klerith/74a0c4426599f3bc25b7f4e8d95b6a7f
+
+		CDN de font-awesome para poner iconos en la app.
+		https://cdnjs.com/libraries/font-awesome
+
+		https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css
+
+4 - React Big Calendar
+		Paquete de npm que agrega un calendario:
+		Este paquete tiene un warning propio del paquete que se puede deshabilitar sacando el modo estricto de la app.
+		Una vez que este resuelto el problema por el creador del paquete podemos volver a activar el modo estricto.
+		https://www.npmjs.com/package/react-big-calendar
+			-> yarn add react-big-calendar
+			-> yarn add date-fns
+
+5 - configuraciones del calendario.
+		Gist de configuraciones de idioma del calendario:
+		https://gist.github.com/Klerith/1658fc368898dd673fc5a9a01ccb12ff
