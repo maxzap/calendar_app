@@ -60,3 +60,15 @@ Borrar directorios:
 7 - Escuchar eventos del calendario.
 		Definicion de eventos del calendario (onDoubleClick, onSelect, onViewChange).
 		Almacenamiento en el local storage del evento onViewChange.
+
+8 - Creamdo un modal sobre el calendario
+		Estilos del modal
+		https://gist.github.com/Klerith/5f490092ce9bd5775cb1d91162be0cea
+
+		React modal
+		https://www.npmjs.com/package/react-modal
+			-> yarn add react-modal
+
+		Configurar un modal en la app. seteando estilos.
+
+
