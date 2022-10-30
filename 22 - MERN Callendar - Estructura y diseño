@@ -55,4 +55,8 @@ Borrar directorios:
 		Gist de configuraciones de idioma del calendario:
 		https://gist.github.com/Klerith/1658fc368898dd673fc5a9a01ccb12ff
 
-6 - Personalizar el cuadro de evento
+6 - Personalizar el cuadro de evento.
+
+7 - Escuchar eventos del calendario.
+		Definicion de eventos del calendario (onDoubleClick, onSelect, onViewChange).
+		Almacenamiento en el local storage del evento onViewChange.
