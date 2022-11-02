@@ -71,4 +71,21 @@ Borrar directorios:
 
 		Configurar un modal en la app. seteando estilos.
 
+9- Contenido del modal
+		Contenido HTML del Modal
+		https://gist.github.com/Klerith/8c9b2178830045b3f5126422bd0223e1
 
+		React Date Picker
+		https://www.npmjs.com/package/react-datepicker
+			-> yarn add react-datepicker
+
+
+10 - Obtener la informacion del formulario del evento.
+		Evitar la propagación del formulario y prepararlo para enviarlo.
+			-> event.preventDefault();
+
+		Validaciones en el formulario:
+			No deberia permitir que la fecha inicial sea anterior a la fecha final.
+				-> yarn add sweetalert2
+
+		Ocupar el estado global.
