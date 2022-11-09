@@ -88,4 +88,40 @@ Borrar directorios:
 			No deberia permitir que la fecha inicial sea anterior a la fecha final.
 				-> yarn add sweetalert2
 
-		Ocupar el estado global.
+11 - Ocupar el store global.
+
+		React Redux
+		https://react-redux.js.org/
+			-> yarn add react-redux
+
+		Documentación en spañol de redux.
+		https://es.redux.js.org/
+		
+		Redux Thunks
+		https://www.npmjs.com/package/redux-thunk
+
+		Redux toolkit
+		https://redux-toolkit.js.org/
+			-> yarn add @reduxjs/toolkit
+		Una vez de que estos paquetes se encuentren instalados deberiamos realizar la creación de los slices
+		Que los slices nos ayudan a crear las acciones, los reducers y los states.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
