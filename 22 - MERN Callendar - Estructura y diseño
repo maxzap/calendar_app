@@ -106,6 +106,12 @@ Borrar directorios:
 		Una vez de que estos paquetes se encuentren instalados deberiamos realizar la creación de los slices
 		Que los slices nos ayudan a crear las acciones, los reducers y los states.
 
+12 - Mostrar y ocultar el modal en base al Store
+
+		Trabajar con store en base a hooks personalizados, es facil y te evita utilizar importaciones posteriormente.
+		Configuramos un hook para manejar el dispatch y los slice que sean necesarios, esto simplifica el uso de los slice del store.
+
+		
 
 
 
