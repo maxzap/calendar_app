@@ -7,28 +7,16 @@ import { Navbar, CalendarEventBox, CalendarModal } from "../"
 
 import { localizer, getMessagesES } from '../../helpers';
 import { useState } from 'react';
-import { useUiStore } from '../../hooks';
-
-
-const events = [{
-  title: 'Cumpleaños de Eli',
-  notes: 'Hay que comprar la torta',
-  start: new Date(),
-  end: addHours( new Date(), 2 ),
-  bgColor: '#fafafa',
-  user: {
-    _id: '123',
-    name: 'Max'
-  }
-}]
+import { useUiStore, useCalendarStore } from '../../hooks';
 
 
 export const CalendarPage = () => {
 
 
   const { openDateModal } = useUiStore();
+  const { events } = useCalendarStore();
 
-  const [lastView, setLastView] = useState(localStorage.getItem('lastView') || 'week');
+  const [ lastView, setLastView ] = useState(localStorage.getItem('lastView') || 'week');
 
   const eventStyleGetter = ( event, start, end, isSelected ) => {
 

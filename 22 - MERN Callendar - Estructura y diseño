@@ -111,6 +111,10 @@ Borrar directorios:
 		Trabajar con store en base a hooks personalizados, es facil y te evita utilizar importaciones posteriormente.
 		Configuramos un hook para manejar el dispatch y los slice que sean necesarios, esto simplifica el uso de los slice del store.
 
+13 - Calendar Slice
+		Creamos un espacio en el store para manejar los eventos del calendario, cual el activo y cuales los cargados.
+		
+
 		
 
 
