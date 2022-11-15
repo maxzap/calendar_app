@@ -114,9 +114,8 @@ Borrar directorios:
 13 - Calendar Slice
 		Creamos un espacio en el store para manejar los eventos del calendario, cual el activo y cuales los cargados.
 		
-
-		
-
+14 - Cargar un evento en el modal.
+		Al hacer un doble click cargar la nota activa en el modal.
 
 
 
