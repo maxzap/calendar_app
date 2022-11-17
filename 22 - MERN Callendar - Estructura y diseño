@@ -117,7 +117,12 @@ Borrar directorios:
 14 - Cargar un evento en el modal.
 		Al hacer un doble click cargar la nota activa en el modal.
 
+		**ERROR**:
+		non-serializable value was detected in an action, in the path: `payload.start`.
+		No logra serializar correctamente la fecha, usualmente se manejan las fechas en numero y como fechas.
 
+15 - Preparar la creación de un nuevo evento.
+		Vamos a agregar un fab (floating acction button) para lanzar el modal del evento en un estado inicial (sin valores).
 
 
 
