@@ -124,9 +124,8 @@ Borrar directorios:
 15 - Preparar la creación de un nuevo evento.
 		Vamos a agregar un fab (floating acction button) para lanzar el modal del evento en un estado inicial (sin valores).
 
-
-
-
+16 - Agregar un nuevo evento al store.
+		Se agrega el evento al store utilizando el fab creado anteriormente.
 
 
 
