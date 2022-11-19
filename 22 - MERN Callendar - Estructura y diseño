@@ -132,6 +132,9 @@ Borrar directorios:
 
 		(Utilizando el operador event cuando llamo el dispatch del onUpdateEvent estoy rompiendo la referencia directa del objeto enviando un nuevo objeto)
 
+18 - Eliminar un evento
+		Usamos un fab para eliminar eventos seleccionados previamente.
+
 
 
 
