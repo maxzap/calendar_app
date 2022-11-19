@@ -127,6 +127,10 @@ Borrar directorios:
 16 - Agregar un nuevo evento al store.
 		Se agrega el evento al store utilizando el fab creado anteriormente.
 
+17 - Editar un evento.
+		Iteramos el array de eventos hasta encontrar el que estoy editand. Luego map devuelve un nuevo array y lo setea en el store de eventos.
+
+		(Utilizando el operador event cuando llamo el dispatch del onUpdateEvent estoy rompiendo la referencia directa del objeto enviando un nuevo objeto)
 
 
 
