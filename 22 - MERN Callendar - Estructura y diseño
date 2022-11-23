@@ -135,6 +135,9 @@ Borrar directorios:
 18 - Eliminar un evento
 		Usamos un fab para eliminar eventos seleccionados previamente.
 
+19 - Redux - SerializableCheck
+		Este problema se resuelve si en lugar de un objeto mandamos una fecha.
+		Pero en este caso configuramos el middleware de manera que deshabilte el serializableCheck
 
 
 
