@@ -141,10 +141,30 @@ Borrar directorios:
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+SECCIÓN 26
 
+Conexión de nuestro Backend con el Frontend
 
+Esta sección trabajaremos integrando nuestro backend con el frontend hecho en React, que ya tenemos casi terminado, sólo debemos de llamar los servicios y dispara las acciones respectivas que ya tenemos en nuestra aplicación del calendario.
 
+Toda esta sección está enfocada en la parte de la autenticación y manejo del JWT, hay que guardar y estar actualizando el token de autenticación y realizar las pruebas respectivas!
+
+Estamos llegando al final del curso :'(... pero aún falta mucho :D
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+1 - Creando variables de entorno.
+		Hay muchas maneras de realizar esta tarea, de hecho vite ya viene configurado para usarlas con el import.meta, pero para configurar variables en testing lo vamos a realizar utilizando una funcion, pera evitar añadir paquetes externos.
+		Como en proyectos anteriores, el consumo de mis variables de entornos la realizo definiendo un metodo que devuelva el import.env.meta
+
+		Usualmente las variables de entorno no se suben a prod, porque tiene cofiguraciones personales.
+		Lo que se recimienda es crear un nuevo archivo nuevo de variables de entornos puntuales.
+
+		entonces definimos el .env y el .env.template que es una copia del env para tenerlo como bitacora de las variables de entorno que son necesarias para configurar el proyecto.
+
+		Tambien es importante crear el archivo README.md para las configuraciones que no son obvias y que desarrolladores las tengan presente al momento de descargar mi proyecto y realizar las configuraciones iniciales.
 
 
 		
