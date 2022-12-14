@@ -167,4 +167,8 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 		Tambien es importante crear el archivo README.md para las configuraciones que no son obvias y que desarrolladores las tengan presente al momento de descargar mi proyecto y realizar las configuraciones iniciales.
 
 
-		
+2 - AuthSlice
+		Mantener el estado de la autenticacion en el store.
+
+		Para esto voy a definir un slice con el estado de autenticacion basico, datos del usuario y el mensaje de error.
+		Ademas voy a configurar import de los reducer de mi slice dentro de mi store y ademas los voy a definir en el slice. (El objetivo de los reducers es generar un nuevo state )
