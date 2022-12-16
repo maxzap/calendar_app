@@ -172,3 +172,9 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 
 		Para esto voy a definir un slice con el estado de autenticacion basico, datos del usuario y el mensaje de error.
 		Ademas voy a configurar import de los reducer de mi slice dentro de mi store y ademas los voy a definir en el slice. (El objetivo de los reducers es generar un nuevo state )
+
+3 - useForm - Login y Registro
+		gist del hook para formularios. La unica condicion es que el formulario tiene que estar inicializadp fuera del componente.
+			--> https://gist.github.com/Klerith/09dede50a8a397231744d4545b771408
+
+		
