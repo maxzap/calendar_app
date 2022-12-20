@@ -177,4 +177,8 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 		gist del hook para formularios. La unica condicion es que el formulario tiene que estar inicializadp fuera del componente.
 			--> https://gist.github.com/Klerith/09dede50a8a397231744d4545b771408
 
-		
+4 - Axios - Configurar cliente para peticiones.
+		Axios tiene una forma util par amanejar los interceptores de los request.
+				--> yarn add axios
+		Los interceptores me pertmiten interceptar request añadir o modoficar datos antes o despues de que se .
+
