@@ -185,4 +185,6 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 5 - Realizar login de usuario.
 		En lugar de utilizar dispatch y thunks envolvimos el mecanismos para realizar dispatch dentro de un hook customizado. De esta manera nos ahorramos agregar una capa mas de complejidad a la funcionalidad de enviar peticiones al backend.
 
-		
+6 - Despachar acciones respectivas.
+		modificar el store en un login correcto o erroneo.
+
