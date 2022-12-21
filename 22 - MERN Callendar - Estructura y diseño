@@ -182,3 +182,7 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 				--> yarn add axios
 		Los interceptores me pertmiten interceptar request añadir o modoficar datos antes o despues de que se .
 
+5 - Realizar login de usuario.
+		En lugar de utilizar dispatch y thunks envolvimos el mecanismos para realizar dispatch dentro de un hook customizado. De esta manera nos ahorramos agregar una capa mas de complejidad a la funcionalidad de enviar peticiones al backend.
+
+		
