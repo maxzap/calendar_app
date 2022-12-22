@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import calendarApi from "../api/calendarApi";
-import { clearErrorMesagge, onChecking, onLogin, onLogOut } from "../store";
+import { clearErrorMessage, onChecking, onLogin, onLogOut } from "../store";
 
 
 export const useAuthStore = () => {
@@ -28,6 +28,26 @@ export const useAuthStore = () => {
         }
     }
 
+    // startRegister
+    const startRegister = async({ name, email, password }) => {
+        dispatch( onChecking() );
+
+        try {
+            const { data } = await calendarApi.post('/auth/new', { name, email, password });
+            localStorage.setItem( 'token', data.token );
+            localStorage.setItem( 'token-init-date', new Date().getTime() );
+
+            dispatch( onLogin({ name: data.name, uid: data.uid }) );
+            
+        } catch (error) {
+            console.log(error);
+            dispatch( onLogOut(error.response.data?.msg || 'Registro incorrecto' ) );
+            setTimeout(() => {
+                dispatch( clearErrorMessage() );
+            }, 10);
+            
+        }
+    }
 
     return {
         // * Propiedades
@@ -38,6 +58,7 @@ export const useAuthStore = () => {
 
         // * Metodos
         startLogin,
+        startRegister,
 
 
     }
