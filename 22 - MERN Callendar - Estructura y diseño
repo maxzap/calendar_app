@@ -188,3 +188,5 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 6 - Despachar acciones respectivas.
 		modificar el store en un login correcto o erroneo.
 
+7 - Mostrar error en la autenticacion.
+		para estar pendientes del errorMessage vamos a utilizar un hook, en este caso vamos a utilizar el useEffect(), porque nos permite renderizar solo si se cumple con una condicion definida.
