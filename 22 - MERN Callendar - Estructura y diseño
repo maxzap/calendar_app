@@ -192,4 +192,7 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 		para estar pendientes del errorMessage vamos a utilizar un hook, en este caso vamos a utilizar el useEffect(), porque nos permite renderizar solo si se cumple con una condicion definida.
 
 8 - Creación de un nuevo usuario.
+		Vamos a verificar el token para verificar si estoy autenticado.
 		
+		Algo interesante que tenemos con Axios es la posibilidad de configurar interceptores, estos nos van a permitir interceptar los request (tanto de entrada como de salida). De esta manera podemos agregar configuración especifica en cada request como por ejemplo headers.
+		And then
