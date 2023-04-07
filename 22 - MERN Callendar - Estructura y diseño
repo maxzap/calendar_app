@@ -202,3 +202,7 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 		Esto es porque cuando ya estamos autenticados la ruta de Auth ya no existe, entonces deberiamos apuntar a la ruta principal.
 
 		NOTA: Podrias crear un interceptor que saque al usuario a la pantalla de login automaticamente cuando el token haya expirado o no exista. Pero depende de la experiencia que queramos darle al usuario, porque otra posibilidad es refrescar el token indefinidamente. Leer mas al respecto!
+
+10 - Logout y nombre de usuario.
+		Para realizar el logout lo unico que deberiamos hacer es destruir el token.
+		Para obtener los datos del usuario y llenar el navBar con estos datos utilizamos el useAuthStore que tiene todos las funciones y datos que necesito del usuario.
