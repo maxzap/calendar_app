@@ -196,3 +196,9 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 		
 		Algo interesante que tenemos con Axios es la posibilidad de configurar interceptores, estos nos van a permitir interceptar los request (tanto de entrada como de salida). De esta manera podemos agregar configuración especifica en cada request como por ejemplo headers.
 		And then
+
+9 - Cambiar la URL después de una autenticación.
+		Luego de realizar una autenticación deberiamos cambiar el path.
+		Esto es porque cuando ya estamos autenticados la ruta de Auth ya no existe, entonces deberiamos apuntar a la ruta principal.
+
+		NOTA: Podrias crear un interceptor que saque al usuario a la pantalla de login automaticamente cuando el token haya expirado o no exista. Pero depende de la experiencia que queramos darle al usuario, porque otra posibilidad es refrescar el token indefinidamente. Leer mas al respecto!
