@@ -206,3 +206,17 @@ Estamos llegando al final del curso :'(... pero aún falta mucho :D
 10 - Logout y nombre de usuario.
 		Para realizar el logout lo unico que deberiamos hacer es destruir el token.
 		Para obtener los datos del usuario y llenar el navBar con estos datos utilizamos el useAuthStore que tiene todos las funciones y datos que necesito del usuario.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SECCIÓN 27
+
+Eventos del calendario + backend
+
+Toda esta sección está enfocada en hacer persistentes nuestros cambios y eventos del calendario utilizando nuestro backend, disparando acciones asíncronas que terminan ejecutando las acciones síncronas que habíamos definido anteriormente.
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+1 - Continuación del proyecto - Caledar CRUD de Eventos.
+		Iniciamos backend y frontend.
