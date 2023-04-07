@@ -38,6 +38,20 @@ export const useCalendarStore = () => {
       dispatch( onDeleteEvent() );
 
     }
+    /* Donde mandamos a llamar la carga de eventos? Podriamos usar un useEffect para cargarlos,
+    pero siendo un compoente que se utililza en varios lugares eso represente un problema. 
+    Por eso exportamos la funcion de startLoadingEvents para dispararla con useEffect directamente
+    en el componente de CalendarPage cada vez que se inicie.*/
+    const startLoadingEvents = async () => {
+      try {
+        const { data } = await calendarApi.get('/events');
+        const events = convertEventsToDateEvents( data.eventos );
+      } catch (error) {
+        console.log('Error cargando eventos');
+        console.log(error);
+        
+      }
+    }
 
   return {
     //* Propiedades
@@ -48,8 +62,9 @@ export const useCalendarStore = () => {
 
 
     //* Metodos
-    startDeletingEvent,
     setActiveEvent,
+    startDeletingEvent,
+    startLoadingEvents,
     startSavingEvent,
   }
 }
