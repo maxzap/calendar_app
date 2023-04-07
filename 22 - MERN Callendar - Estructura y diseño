@@ -231,6 +231,11 @@ Toda esta sección está enfocada en hacer persistentes nuestros cambios y event
 3 - Mostrar el evento en la BD.
 		Vamos a mostrar el evento, pero el primer punto a ver es la conversion de fechas desde la que entrega el back en un String	(1970-01-01T00:00:00.001Z) a una fecha de JavaScript. Vamos a gestionar la conversion de la data del evento en un helper.
 
+4 - Cargar los eventos al store.
+		Ya tenemos los eventos, pero no tenemos ningun reducer para modificar el store con los nuevos eventos.
+
+		Creamos un reducer onLoadEvents para cargar los eventos que retorne el back.
+
 
 
 		
