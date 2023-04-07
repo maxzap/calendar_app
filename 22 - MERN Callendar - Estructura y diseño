@@ -236,6 +236,13 @@ Toda esta sección está enfocada en hacer persistentes nuestros cambios y event
 
 		Creamos un reducer onLoadEvents para cargar los eventos que retorne el back.
 
+5 - Actualizar el evento.
+		vamos a actualizar un evento.
+
+		refactor actualizar los eventos.
+
+		prueba de editar notas de otros usuarios.
+
 
 
 		
