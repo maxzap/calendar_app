@@ -220,3 +220,14 @@ Toda esta sección está enfocada en hacer persistentes nuestros cambios y event
 
 1 - Continuación del proyecto - Caledar CRUD de Eventos.
 		Iniciamos backend y frontend.
+
+2 - Creando un nuevo evento en el calendario.
+		Vamos a trabajar con la creacion de un nuevo evento [Acá vamos a utilizar el calendarApi para realizar la petición POST, el calendarApi ya se encuentra preconfigurado con token (usando un interceptor), host y servicio, solo falta agregar la ultima parte de la url del servicio al que queremos enviar el request].
+
+		Al crear el evento reemplazamos en el store la creación del id (new Date().getTime()) por el id que nos entrega el backend.
+
+		Ademas incorporamos los datos del usuario asociado al evento que nos entrega el response de la creación del evento.
+
+
+
+		
