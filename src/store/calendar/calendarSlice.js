@@ -1,25 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addHours } from 'date-fns';
+// import { addHours } from 'date-fns';
 
-const tempEvent = {
-   _id: new Date().getTime(),
-   title: 'Cumpleaños de Eli',
-   notes: 'Hay que comprar la torta',
-   start: new Date(),
-   end: addHours( new Date(), 2 ),
-   bgColor: '#fafafa',
-   user: {
-     _id: '123',
-     name: 'Max'
-   }
- };
+// const tempEvent = {
+//    _id: new Date().getTime(),
+//    title: 'Cumpleaños de Eli',
+//    notes: 'Hay que comprar la torta',
+//    start: new Date(),
+//    end: addHours( new Date(), 2 ),
+//    bgColor: '#fafafa',
+//    user: {
+//      _id: '123',
+//      name: 'Max'
+//    }
+//  };
 
 
 export const calendarSlice = createSlice({
    name: 'calendar',
    initialState: {
+      isLoadingEvents: true,
       events: [
-         tempEvent
+         // tempEvent
       ],
       activeEvent: null
    },
@@ -44,10 +45,27 @@ export const calendarSlice = createSlice({
             state.events = state.events.filter( event => event._id !== state.activeEvent._id );
             state.activeEvent = null;
          }
+      },
+      onLoadEvents: ( state, { payload = [] }) => {
+         state.isLoadingEvents = false;
+         // state.events = payload;
+
+         /** vamos a realizar una carga de eventos en el store validando que el mismo no se encuentre
+          * actualmente.
+          */
+         payload.forEach( event => {
+            /** acá podria utilizar la funcion find (pero esta retorna un objeto) o podria
+             * usar el some que regresa un valor booleano si lo encuentra
+             */
+            const exists = state.events.some( dbEvent => dbEvent.id === event.id );
+            if ( !exists ) {
+               state.events.push( event );
+            }
+         })
       }
    }
 });
 
 
 // Action creators are generated for each case reducer function
-export const { onSetActiveEvent, onAddNewEvent, onUpdateEvent, onDeleteEvent } = calendarSlice.actions;
+export const { onSetActiveEvent, onAddNewEvent, onUpdateEvent, onDeleteEvent, onLoadEvents } = calendarSlice.actions;
