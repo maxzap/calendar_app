@@ -250,6 +250,20 @@ Toda esta sección está enfocada en hacer persistentes nuestros cambios y event
 		Vamos a eliminar eventos.
 
 
+8 - Limpiar información del calendario.
+		Vamos a limpiar la información de los eventos del store.
 
+
+
+Notas finales:
+	En el caso de que queramos bajar el codigo tenemos que crear el archivo env.template de acuerdo al readme.
+
+	El store se utilizo sin un thunk (Es decir sin dispatch de tareas asincronas), es una manera diferente de hacerlo, en este caso todos los dispatch son sincronos y los reques son todos asincronos.
+
+	Usamos Axios para los interceptores.
+
+	Usamos custom hooks, tenemos hooks especializados para trabajar con cualquier parte del store que utilicemos.
+
+	
 
 		
