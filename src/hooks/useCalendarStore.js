@@ -44,10 +44,18 @@ export const useCalendarStore = () => {
     }
 
     const startDeletingEvent = async() => {
-      // TODO: llegar al backend 
+      // TODO: llegar al backend
 
-      // todo: todo bien
-      dispatch( onDeleteEvent() );
+      try {
+        await calendarApi.delete(`/events/${ activeEvent.id }`);
+        // todo: todo bien
+        dispatch( onDeleteEvent() );
+        
+      } catch (error) {
+        console.log(error)
+        Swal.fire('Error al eliminar', error.response.data.msg, 'error');
+      }
+
 
     }
     /* Donde mandamos a llamar la carga de eventos? Podriamos usar un useEffect para cargarlos,
