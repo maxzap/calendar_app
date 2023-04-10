@@ -266,4 +266,26 @@ Notas finales:
 
 	
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SECCIÓN 28
+
+Despliegues a producción
+
+Aquí tomaremos nuestra aplicación de React para generar el build de producción y desplegarlo en nuestro backend en Heroku (*).
+
+*.	Desde agosto del 2022 Heroku ya no tiene una capa gratuita para realizar los despliegues a producción.
+		Por esto vamos a utilizara Fly.io en lugar de Heroku para desplegar nuestro backend.
+		Una punto no menor, es que el despliegue del frontend se puede realizar de manera independiente en Netlify o Github pages.
 		
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+1 - Generar version de producción y desplegarla en Heroku.
+	Corregimos la carga de las variables de entorno haciendolo de manera manual, por un bug existente en Vite y la cargas de las variables en entorno productivos.
+
+	Sacamos una atributo repetido en LoginPage.jsx.
+
+
+	**. Otro problema con Vite es que la variables de entorno recien son agregadas al build de produccion despues de haberlas utilizado, esto quiere decir que al crear nuevas variables debemos utilizarlas corriendo el proyecto antes de generar el build. Por eso tenemos que crear un archivos de variables de entorno de produccion, porque este tiene mas prioridad que el archivos env.

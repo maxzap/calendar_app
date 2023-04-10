@@ -13,7 +13,6 @@ const registerFormsFields = {
     registerEmail: '',
     registerPassword: '',
     registerPassword2: '',
-    registerPassword: '',
 };
 
 export const LoginPage = () => {
